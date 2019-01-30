@@ -15,19 +15,14 @@ namespace MyAgeAndFriendsAge
             myAge = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("What is your name?");
             myName = Console.ReadLine();
-            Console.WriteLine("Your name is " + myName + " and you are" + myAge + " years old!");
+            Console.WriteLine("Your name is " + myName + " and you are " + myAge + " years old!");
 
             Console.WriteLine("How old is your friend?");
             friendsAge = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("What is your friends name?");
             friendsName = Console.ReadLine();
-            Console.WriteLine("Your friends name is " + friendsName + "and they are " + friendsAge + " years old!");
-
-            int oldPeople = myAge + friendsAge;
-
-            Console.WriteLine("You ages added together is " + oldPeople + " years!");
-
-            
+            Console.WriteLine("Your friends name is " + friendsName + " and they are " + friendsAge + " years old!");
+            Console.WriteLine(friendsName + " and " + myName + " your ages added together is " + (myAge + friendsAge) + " years!");
         }
     }
 }
